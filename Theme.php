@@ -11,7 +11,9 @@ class Theme extends \MapasCulturais\Themes\BaseV2\Theme {
         parent::_init();
 
         $app = App::i();
-        
+
+        $this->enqueueStyle('app-v2', 'space', 'css/space-edit.css');
+
         // Manifest do five icon
         $app->hook('GET(site.webmanifest)', function() use ($app) {
             /** @var \MapasCulturais\Controller $this */
