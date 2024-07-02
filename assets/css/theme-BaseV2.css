@@ -6019,6 +6019,14 @@ body.galleryOpen {
   font-size: 1.5rem;
   line-height: 1.75rem;
 }
+.card__left--content-title .title {
+  color: var(--mc-white);
+  transition: 200ms;
+}
+.card__left--content-title .title:hover {
+  color: var(--mc-danger-300);
+  cursor: pointer;
+}
 .home-entities__content--cards .card__left--img {
   height: 9.75rem;
 }
